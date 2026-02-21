@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- NEW WEBSITE 15-02-26 -->
+<html lang="en">
+   <head>
+      <base target="_self">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Swapnil Chemicals</title>
+      <meta name="description" content="Swapnil Chemicals - Leading manufacturers and marketers of automobile cleaning products in Jaipur. Bulk and retail suppliers of dashboard polish, tyre polish, car foaming wash, and more.">
+      <meta name="keywords" content="automobile cleaning products, car cleaning, dashboard polish, tyre polish, car wash, glass cleaner, Jaipur manufacturer">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+         tailwind.config = {
+             theme: {
+                 extend: {   
+                     colors: {
+                         primary: "#1e40af",
+                         secondary: "#1e3a8a",
+                         accent: "#f59e0b"
+                     },
+                     fontFamily: {
+                         'sans': ['Inter', 'system-ui', 'sans-serif'],
+                     }
+                 }
+             }
+         }
+      </script>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <style>
+         body {
+         font-family: 'Inter', sans-serif;
+         }
+         .hero-gradient {
+         background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+         }
+         .product-card:hover {
+         transform: translateY(-5px);
+         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+         }
+         .contact-icon {
+         transition: all 0.3s ease;
+         }
+         .contact-icon:hover {
+         transform: scale(1.1);
+         }
+         /* custom 20-02-26 */
+        #scrollToTop {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        width: 50px; /* Set a fixed width */
+        height: 50px; /* Set a fixed height */
+        border-radius: 50%; /* makes the button circular */
+        display: flex; /* Centering flexbox */
+        align-items: center; /* Centering vertically */
+        justify-content: center; /* Centering horizontally */
+    }
+      </style>
+   </head>
+   <body class="min-h-screen bg-gray-50 text-gray-800">
+      <!-- Header & Navigation -->
+      <header class="sticky top-0 z-50 bg-white shadow-md">
+         <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+               <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                  <!-- <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                     <i class="fas fa-industry text-white text-xl"></i>
+                     </div> -->
+                  <div class="w-12 h-12 rounded-full flex items-center justify-center overflow-hidden">
+                     <img src="SC Logo.jpg" alt="SC Logo" class="w-full h-full object-cover">
+                  </div>
+                  <div>
+                     <h1 class="text-2xl font-bold text-blue-900">Swapnil Chemicals</h1>
+                     <p class="text-sm text-gray-600">Manufacturers & marketers of automobile cleaning products</p>
+                  </div>
+               </div>
+               <div class="text-center md:text-right">
+                  <p class="text-gray-700"><i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>Jaipur • Bulk & Retail</p>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="hero-gradient text-white py-12 md:py-20">
+         <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+               <h2 class="text-3xl md:text-5xl font-bold mb-6">Premium Automobile Cleaning Solutions</h2>
+               <p class="text-xl md:text-2xl mb-8 opacity-90">Manufacturing excellence since 2020. Trusted by automotive professionals across Rajasthan.</p>
+               <div class="flex flex-wrap justify-center gap-4">
+                  <a href="#products" class="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                  <i class="fas fa-boxes mr-2"></i>View Products
+                  </a>
+                  <a href="#contact" class="bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">
+                  <i class="fas fa-phone-alt mr-2"></i>Contact Now
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Business Details Section -->
+      <section class="py-12 bg-white">
+         <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-10">Business Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+               <!-- Proprietor Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-user-tie text-blue-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <p class="text-blue-900 font-bold text-xl">Gajendra Jain</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Contact Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-phone-alt text-green-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Phone</h3>
+                        <p class="text-xl">
+                           <a href="tel:9352470085"
+                              class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                           9352470085
+                           </a>
+                        </p>
+                        <p class="text-xl">
+                           <a href="tel:9024598298"
+                              class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                           9024598298
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- GST Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-file-invoice-dollar text-purple-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">GST No.</h3>
+                        <p class="text-blue-900 font-bold">08CIJPS1734A1ZE</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Email Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-envelope text-red-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Email</h3>
+                        <p>
+                           <a href="mailto:swapnilchemicals10@gmail.com"
+                              target="_blank"
+                              class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                           swapnilchemicals10@gmail.com
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- MSME Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-award text-yellow-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">MSME</h3>
+                        <p class="text-blue-900 font-bold">MSME/2020/6194</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- Udyam Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-award text-yellow-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">Udyam</h3>
+                        <p class="text-blue-900 font-bold">Udyam: UDYAM-RJ-17-0022468</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- BRN Card -->
+               <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                  <div class="flex items-center mb-4">
+                     <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+                        <i class="fas fa-building text-indigo-600 text-xl"></i>
+                     </div>
+                     <div>
+                        <h3 class="text-lg font-semibold text-gray-800">BRN</h3>
+                        <p class="text-blue-900 font-bold">8005220072000968</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Products Section -->
+      <section id="products" class="py-16 bg-gray-50">
+         <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+               <!-- Product cards will be generated by JavaScript -->
+            </div>
+         </div>
+      </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 bg-white">
+         <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Contact Us</h2>
+            <div class="max-w-4xl mx-auto">
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <!-- Contact Info -->
+                  <div class="space-y-6">
+                     <div class="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
+                        <div class="contact-icon w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                           <i class="fas fa-phone-alt text-white text-xl"></i>
+                        </div>
+                        <div>
+                           <h3 class="font-semibold text-lg text-gray-800">Phone</h3>
+                           <p class="text-xl">
+                              <a href="tel:9352470085"
+                                 class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                              9352470085
+                              </a>
+                           </p>
+                           <p class="text-xl">
+                              <a href="tel:9024598298"
+                                 class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                              9024598298
+                              </a>
+                           </p>
+                        </div>
+                     </div>
+                     <div class="flex items-center space-x-4 p-4 bg-green-50 rounded-lg">
+                        <div class="contact-icon w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                           <i class="fab fa-google-pay text-white text-xl"></i>
+                        </div>
+                        <div>
+                           <h3 class="font-semibold text-lg text-gray-800">Google Pay</h3>
+                           <a href="upi://pay?pa=boism-9352470085@boi&pn=Swapnil%20Chemicals&cu=INR"
+                              class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                           Pay to 9352470085 (boism-9352470085@boi)
+                           </a>
+                        </div>
+                     </div>
+                     <div class="flex items-center space-x-4 p-4 bg-red-50 rounded-lg">
+                        <div class="contact-icon w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                           <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <div>
+                           <h3 class="font-semibold text-lg text-gray-800">Email</h3>
+                           <a href="mailto:swapnilchemicals10@gmail.com" class="text-blue-900 font-bold hover:text-blue-700 transition duration-300">
+                           swapnilchemicals10@gmail.com
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Contact Form -->
+                  <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                     <h3 class="text-xl font-semibold text-gray-800 mb-4">Send us a message</h3>
+                     <form id="contactForm" class="space-y-4">
+                        <div>
+                           <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                           <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" required>
+                        </div>
+                        <div>
+                           <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                           <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" required>
+                        </div>
+                        <div>
+                           <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                           <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-300" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       <!-- 20-02-26 for scrolling option -->
+<button id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white p-3 hidden">
+    <i class="fas fa-arrow-up"></i>
+</button>
+      <!-- Footer -->
+      <footer class="bg-blue-900 text-white py-8">
+         <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+               <div class="mb-6 md:mb-0">
+                  <h3 class="text-2xl font-bold mb-2">Swapnil Chemicals</h3>
+                  <p class="text-blue-200">Manufacturers & marketers of automobile cleaning products</p>
+                  <p class="text-blue-200 mt-1">Jaipur • Bulk & Retail</p>
+               </div>
+               <div class="flex space-x-4">
+                  <a href="tel:9352470085" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                  <i class="fas fa-phone-alt"></i>
+                  </a>
+                  <a href="mailto:swapnilchemicals10@gmail.com" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                  <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="upi://pay?pa=boism-9352470085@boi&pn=Swapnil%20Chemicals&cu=INR" class="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                  <i class="fab fa-google-pay"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center">
+               <p class="text-blue-200">© 2026 Swapnil Chemicals. All rights reserved.</p>
+               <p class="text-blue-300 text-sm mt-2">MSME Registered • GST Certified • Quality Assured Products</p>
+            </div>
+         </div>
+      </footer>
+      <script>
+         // Define products data
+         const products = [
+             { "id": 1, "name": "Dashboard Polish", 
+         "image": "Dashboard Polish.png", 
+         "description": "Premium dashboard polish for long-lasting shine","price": 180, "unit": "Lt"},
+             { "id": 2, "name": "Tyre Polish", "image": "Tyre Polish.jpeg", "description": "High-gloss tyre polish for enhanced appearance","price": 110, "unit": "Lt"},
+             { "id": 3, "name": "Car Foaming Wash", "image": "Car Foaming Wash.jpeg","description": "Advanced foaming wash for thorough cleaning","price": 50, "unit": "Lt"},
+             { "id": 4, "name": "Glass Cleaner", "image": "Glass Cleaner.jpeg","description": "Streak-free glass cleaner for crystal clear visibility","price": 60, "unit": "Lt"},
+             { "id": 5, "name": "Interior Cleaner", "image": "Interior Cleaner.jpeg","description": "Effective interior cleaner for all surfaces","price": 110, "unit": "Lt"},
+             { "id": 6, "name": "Foaming Gun", "image": "Foaming Gun.jpeg","description": "Professional foaming gun for car wash","price": 1600, "unit": "per piece"},
+             { "id": 7, "name": "Micro Towel", "image": "Micro Towel.jpg","description": "Ultra soft Micro Towel","price": 60, "unit": "per piece"},
+             { "id": 7, "name": "Micro Towel", "image": "Micro Towel 2.jpg","description": "Ultra soft Micro Towel","price": 100, "unit": "per piece"},
+             { "id": 7, "name": "Micro Towel", "image": "Micro Towel 3.jpg","description": "Ultra soft Micro Towel","price": 120, "unit": "per piece"},
+         ];
+         
+         function generateProductCards() {
+         const productsContainer = document.querySelector('#products .grid');
+         productsContainer.innerHTML = '';
+         
+         products.forEach(product => {
+         const productCard = document.createElement('div');
+         productCard.className = 'product-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300';
+         
+         productCard.innerHTML = `
+             <div class="relative overflow-hidden">
+                 <img src="${product.image}" alt="${product.name}" class="w-full h-200 object-cover" loading="lazy">
+                 <div class="absolute top-2 right-2 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                     <i class="fas fa-star mr-1"></i>Premium
+                 </div>
+             </div>
+             <div class="p-6">
+                 <h3 class="text-xl font-bold text-gray-800 mb-2">${product.name}</h3>
+                 <p class="text-gray-600 mb-2">${product.description}</p>
+         
+                 <p class="text-lg font-semibold text-blue-700 mb-4">
+                     ₹ ${product.price}/${product.unit}
+                 </p>
+         
+             </div>
+         `;
+         productsContainer.appendChild(productCard);
+         });
+         }
+         
+         // Function to handle product inquiry
+         function inquireProduct(productName) {
+             const name = prompt("Enter your name:");
+             if (name) {
+                 const phone = prompt("Enter your phone number:");
+                 if (phone) {
+                     alert(`Thank you ${name}! We will contact you at ${phone} regarding ${productName}.`);
+                     // In a real application, you would send this data to a server
+                 }
+             }
+         }
+         
+           // Contact form handler
+         document.getElementById('contactForm').addEventListener('submit', function(e) {
+         e.preventDefault();
+         
+         const name = document.getElementById('name').value;
+         const email = document.getElementById('email').value;
+         const message = document.getElementById('message').value;
+         
+         // Create WhatsApp formatted message
+         const whatsappMessage =
+             "New Contact Form Message:%0A%0A" +
+             "Name: " + name + "%0A" +
+             "Email: " + email + "%0A" +
+             "Message: " + message;
+         
+         const phoneNumber = "919352470085"; // India country code added
+         const whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + whatsappMessage;
+         
+         // Open WhatsApp
+         window.open(whatsappURL, "_blank");
+         
+         // Show success message
+         alert("Thank you " + name + "! Redirecting you to WhatsApp.");
+         
+         // Reset form
+         this.reset();
+         });
+         
+         // Smooth scrolling for anchor links
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+             e.preventDefault();
+             const targetId = this.getAttribute('href');
+             if (targetId !== '#') {
+                 const targetElement = document.querySelector(targetId);
+                 if (targetElement) {
+                     window.scrollTo({
+                         top: targetElement.offsetTop - 80,
+                         behavior: 'smooth'
+                     });
+                 }
+             }
+         });
+         });
+
+         // custom K for scrolling 20-02-26
+    window.onscroll = function() {
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopButton.classList.remove('hidden');
+        } else {
+            scrollToTopButton.classList.add('hidden');
+        }
+    };
+
+    // Smoothly scroll to the top when the button is clicked
+    document.getElementById('scrollToTop').onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+         
+         // Initialize product cards on page load
+         document.addEventListener('DOMContentLoaded', generateProductCards);
+      </script>
+   </body>
+</html>
