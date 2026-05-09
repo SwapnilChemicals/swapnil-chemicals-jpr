@@ -1026,7 +1026,7 @@
     const key = `${productId}_${selectedQty}`;
     if (cart[key]) cart[key].qty += 1;
     else cart[key] = { product, qty: 1, selectedQty };
-    localStorage.setItem('sc_cart', JSON.stringify(cart));
+    localStorage.setItem('sc_cart_home', JSON.stringify(cart));
     
     // ✅ Badge/UI update sirf tab hoga jab item cart tak pahunch jaye
     setTimeout(() => {
@@ -1096,19 +1096,19 @@
           const newQty = cart[key].qty + delta;
           if (newQty < 1) return;
           cart[key].qty = newQty;
-          localStorage.setItem('sc_cart', JSON.stringify(cart));
+          localStorage.setItem('sc_cart_home', JSON.stringify(cart));
           updateCartUI();
         }
 
         function removeFromCart(key) {
           delete cart[key];
-          localStorage.setItem('sc_cart', JSON.stringify(cart));
+          localStorage.setItem('sc_cart_home', JSON.stringify(cart));
           updateCartUI();
         }
 
         function clearCart() {
           cart = {};
-          localStorage.removeItem('sc_cart');
+          localStorage.removeItem('sc_cart_home');
           updateCartUI();
           document.getElementById('cartPanel').classList.add('hidden'); // custom 07-05-26
         }
@@ -1472,7 +1472,7 @@
           initContactForm();
           initSmoothScrolling();
           setTimeout(initScrollAnimations, 100);
-          const saved = localStorage.getItem('sc_cart');
+          const saved = localStorage.getItem('sc_cart_home');
           if (saved) try {
             cart = JSON.parse(saved);
             updateCartUI();
