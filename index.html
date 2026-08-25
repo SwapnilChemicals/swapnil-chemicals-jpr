@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Home new code 18-08-26 -->
+<!-- Home new code 25-08-26 -->
 <html lang="en">
 
 <head>
@@ -355,12 +355,14 @@
     }
 
     .btn-secondary {
-      background: linear-gradient(135deg, #f59e0b, #d97706);
+      /* background: linear-gradient(135deg, #f59e0b, #d97706); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       transition: all 0.3s ease;
     }
 
     .btn-secondary:hover {
-      background: linear-gradient(135deg, #d97706, #b45309);
+      /* background: linear-gradient(135deg, #d97706, #b45309); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       transform: translateY(-2px);
       box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
     }
@@ -474,7 +476,8 @@
       padding: 9px 14px;
       border-radius: 0.75rem;
       border: none;
-      background: linear-gradient(135deg, #f59e0b, #d97706);
+      /* background: linear-gradient(135deg, #f59e0b, #d97706); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       color: white;
       font-size: 0.8rem;
       font-weight: 700;
@@ -487,13 +490,15 @@
     }
 
     .add-to-cart-btn:hover {
-      background: linear-gradient(135deg, #d97706, #b45309);
+      /* background: linear-gradient(135deg, #d97706, #b45309); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       transform: translateY(-1px);
       box-shadow: 0 6px 16px rgba(245, 158, 11, 0.35);
     }
 
     .enquiry-trigger-btn {
-      background: linear-gradient(135deg, #f97316, #ea580c);
+      /* background: linear-gradient(135deg, #f97316, #ea580c); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       color: #fff;
       border: none;
       padding: 8px 14px;
@@ -520,7 +525,7 @@
       width: 46px;
       height: 46px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #f59e0b, #d97706);
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       color: white;
       border: none;
       cursor: pointer;
@@ -1010,12 +1015,14 @@
     }
 
     .added-cart-viewcart-btn {
-      background: linear-gradient(135deg, #f59e0b, #d97706);
+      /* background: linear-gradient(135deg, #f59e0b, #d97706); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       color: #fff;
     }
 
     .added-cart-viewcart-btn:hover {
-      background: linear-gradient(135deg, #d97706, #b45309);
+      /* background: linear-gradient(135deg, #d97706, #b45309); */
+      background: linear-gradient(135deg, #ea580c, #ea580c);
       transform: translateY(-1px);
     }
 
@@ -1292,7 +1299,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Swapnil Chemicals",
-    "description": "Manufacturers and marketers of home cleaning products - dashboard polish, tyre polish, car wash, glass cleaner and more.",
+    "description": "Manufacturers and marketers of home cleaning products - handwash, dishwash, detergent and more.",
     "image": "SC Logo.jpg",
     "telephone": ["+919352470085", "+919024598298"],
     "email": "swapnilchemicals10@gmail.com",
@@ -1602,47 +1609,53 @@
         <div class="section-divider max-w-xs mx-auto"></div>
       </div>
       <div class="max-w-3xl mx-auto space-y-4">
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             Do you supply bulk or only retail orders?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">Yes — we supply both bulk and retail quantities. For wholesale pricing, call <a href="tel:9352470085" class="text-blue-600">9352470085</a> or <a href="tel:9024598298" class="text-blue-600">9024598298</a>, or use the "Enquiry" button on any product.</p>
+          <p class="text-gray-600 px-6 py-4">Yes — we supply both bulk and retail quantities. For wholesale pricing, call <a href="tel:9352470085" class="text-blue-600">9352470085</a> or <a href="tel:9024598298" class="text-blue-600">9024598298</a>, or use the "Enquiry" button on any product.</p>
         </details>
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             What payment methods do you accept?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">We accept UPI and Google Pay — scan the QR code or pay to the UPI ID shown in the Contact section. Call us to discuss other payment arrangements.</p>
+          <p class="text-gray-600 px-6 py-4">We accept UPI and Google Pay — scan the QR code or pay to the UPI ID shown in the Contact section. Call us to discuss other payment arrangements.</p>
         </details>
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             Is Swapnil Chemicals a registered business?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">Yes. We are GST registered (08CIJPS1734A1ZE), MSME certified (MSME/2020/6194), Udyam registered (UDYAM-RJ-17-0022468), and hold other applicable business registrations and certifications.</p>
+          <p class="text-gray-600 px-6 py-4">Yes. We are GST registered (08CIJPS1734A1ZE), MSME certified (MSME/2020/6194), Udyam registered (UDYAM-RJ-17-0022468), and hold other applicable business registrations and certifications.</p>
         </details>
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             How do I place an order?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">Pick a product, choose a quantity, and tap "Add to Cart" or "Enquiry." Your request is sent directly to us on WhatsApp — no account or login needed.</p>
+          <p class="text-gray-600 px-6 py-4">Pick a product, choose a quantity, and tap "Add to Cart" or "Enquiry." Your request is sent directly to us on WhatsApp — no account or login needed.</p>
         </details>
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             Where is Swapnil Chemicals based?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">We are based in Jaipur, Rajasthan, and support both bulk and retail customers.</p>
+          <p class="text-gray-600 px-6 py-4">We are based in Jaipur, Rajasthan, and support both bulk and retail customers.</p>
         </details>
-        <details class="group glass-card rounded-2xl p-6">
-          <summary class="font-semibold text-lg text-gray-800 cursor-pointer list-none flex justify-between items-center gap-4">
+        <details name="faq" class="group rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-sm">
+          <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center gap-4 px-6 py-4 bg-slate-100 text-gray-800 group-open:text-white group-open:bg-gradient-to-r group-open:from-orange-500 group-open:to-orange-600 transition-colors">
             Do you offer custom quantities or packaging?
-            <i class="fas fa-chevron-down text-blue-600 transition-transform group-open:rotate-180" aria-hidden="true"></i>
+            <i class="fas fa-plus flex-shrink-0 group-open:hidden" aria-hidden="true"></i>
+            <i class="fas fa-minus flex-shrink-0 hidden group-open:inline" aria-hidden="true"></i>
           </summary>
-          <p class="text-gray-600 mt-3">For requirements outside the listed options, contact us directly by phone or WhatsApp and we'll get back to you.</p>
+          <p class="text-gray-600 px-6 py-4">For requirements outside the listed options, contact us directly by phone or WhatsApp and we'll get back to you.</p>
         </details>
       </div>
     </div>
@@ -2229,7 +2242,7 @@
       body.innerHTML = `
           ${productsHtml}
           <div class="enquiry-field-wrap">
-              <label class="text-xs font-bold text-gray-600 uppercase" for="cart-enquiry-details">Workshop Name &amp; Address</label>
+              <label class="text-xs font-bold text-gray-600 uppercase" for="cart-enquiry-details">Name &amp; Address</label>
               <textarea id="cart-enquiry-details" class="enquiry-textarea" rows="2" placeholder="Any specific requirements..."></textarea>
           </div>
           <div class="enquiry-field-wrap">
