@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Home new code 03-09-26 -->
+<!-- Home new code 04-09-26 -->
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -151,9 +151,16 @@
             }
 
             .hero-gradient {
-                background: linear-gradient(180deg,#4C1D95 0%, #4C1D95 50%, #6D28D9 50%, #6D28D9 100%);
                 position: relative;
                 overflow: hidden;
+            }
+
+            .hero-band-top {
+                background: #4c1d95;
+            }
+
+            .hero-band-bottom {
+                background: #6d28d9;
             }
 
             .hero-gradient::before {
@@ -352,6 +359,13 @@
 
             .gradient-text.mb-4 {
                 font-size: clamp(1.75rem, 1.35rem + 2vw, 2.75rem);
+            }
+
+            .gradient-text-hero {
+                background: linear-gradient(90deg, #67e8f9, #93c5fd);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
 
             .hero-gradient h2 {
@@ -1608,7 +1622,9 @@
                         </div>
                         <div>
                             <h1 class="text-2xl font-bold gradient-text">Swapnil Chemicals</h1>
-                            <p class="text-sm text-gray-600">Manufacturers & marketers of home cleaning products</p>
+                            <p class="text-sm text-gray-600">
+                                Manufacturers & marketers of home cleaning products
+                            </p>
                         </div>
                     </div>
 
@@ -1633,27 +1649,38 @@
         </header>
 
         <main id="main-content" tabindex="-1">
-            <section class="hero-gradient text-white min-h-[86.5vh] flex items-center relative">
-                <div class="container mx-auto px-4 relative z-10">
-                    <div class="max-w-5xl mx-auto text-center hero-content-in">
-                        <div class="mb-8">
-                            <h2 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <section class="hero-gradient text-white min-h-[86.5vh] flex flex-col relative">
+                <div class="hero-band-top flex-1 flex items-start relative z-10 pt-16 md:pt-24 pb-6">
+                    <div class="container mx-auto px-4">
+                        <div class="max-w-5xl mx-auto text-center hero-content-in">
+                            <h2 class="text-4xl md:text-6xl font-bold leading-tight">
                                 Premium Home <br /><span class="text-blue-400">Cleaning Solutions</span>
                             </h2>
                         </div>
-                        <p class="text-xl md:text-2xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
-                            Manufacturing excellence since 2020.
-                        </p>
-                        <div class="flex flex-wrap justify-center gap-6">
-                            <a
-                                href="#products"
-                                class="btn-primary text-white px-10 py-4 rounded-xl font-semibold text-lg"
-                                ><i class="fas fa-boxes mr-3"></i>View Products</a
-                            ><a
-                                href="#contact"
-                                class="btn-secondary text-white px-10 py-4 rounded-xl font-semibold text-lg"
-                                ><i class="fas fa-phone-alt fa-flip-horizontal mr-3"></i>Contact Now</a
-                            >
+                    </div>
+                </div>
+                <div class="hero-band-bottom flex-1 flex items-start relative z-10 pt-6 pb-10">
+                    <div class="container mx-auto px-4">
+                        <div class="max-w-5xl mx-auto text-center">
+                            <p class="text-lg md:text-xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
+    Swapnil Chemicals is a Jaipur-based manufacturer of Premium Home Cleaning
+    Products, trusted by bulk and retail customers since 2020. We produce our own
+    Handcare, Dishwash, Detergent and more, ensuring
+    consistent quality. As a GST registered, MSME and Udyam certified business, we
+    supply orders across India. Call us at 9352470085 or 9024598298 for bulk orders
+    or pricing.
+</p>
+                            <div class="flex flex-wrap justify-center gap-6">
+                                <a
+                                    href="#products"
+                                    class="btn-primary text-white px-10 py-4 rounded-xl font-semibold text-lg"
+                                    ><i class="fas fa-boxes mr-3"></i>View Products</a
+                                ><a
+                                    href="#contact"
+                                    class="btn-secondary text-white px-10 py-4 rounded-xl font-semibold text-lg"
+                                    ><i class="fas fa-phone-alt fa-flip-horizontal mr-3"></i>Contact Now</a
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1808,7 +1835,7 @@
                                 type="search"
                                 id="productSearch"
                                 class="w-full pl-11 pr-12 py-3 rounded-xl border border-gray-200 bg-white focus:border-blue-500 focus:outline-none focus:shadow-[0_0_0_4px_rgba(139,92,246,0.15)] transition-shadow text-sm"
-                                placeholder="Search products (e.g. tyre polish, micro towel)..."
+                                placeholder="Search products (e.g. handcare, dishwash)..."
                                 aria-label="Search products"
                             />
                             <button type="button" id="voiceSearchBtn" class="voice-btn" aria-label="Search by voice">
@@ -2220,7 +2247,7 @@
                     </div>
                     <div class="enquiry-field-wrap">
                         <label class="text-xs font-bold text-gray-600 uppercase" for="enquiry-details"
-                            >Name & Address</label
+                            >Workshop Name & Address</label
                         ><textarea
                             id="enquiry-details"
                             class="enquiry-textarea"
@@ -2784,7 +2811,7 @@
                 body.innerHTML = `
           ${productsHtml}
           <div class="enquiry-field-wrap">
-              <label class="text-xs font-bold text-gray-600 uppercase" for="cart-enquiry-details">Name &amp; Address</label>
+              <label class="text-xs font-bold text-gray-600 uppercase" for="cart-enquiry-details">Workshop Name &amp; Address</label>
               <textarea id="cart-enquiry-details" class="enquiry-textarea" rows="2" placeholder="Any specific requirements..."></textarea>
           </div>
           <div class="enquiry-field-wrap">
